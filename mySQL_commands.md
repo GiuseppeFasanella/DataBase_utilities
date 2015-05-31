@@ -66,6 +66,10 @@ primary key(event_id,student_id));
 
 * Come chiave primaria uso la combinazione event_id, student_id che e' unica
 
+insert into score value(1,2,15);
+
+* Nota che la creazione della chiave primaria viene gestita da mySQL, tu devi inserire solo student_id, event_id e score
+
 # Guardare al volo il db
 show tables;
 
