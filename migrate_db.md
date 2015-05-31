@@ -1,6 +1,6 @@
 # How To Migrate a MySQL Database Between Two Servers
 
-* Make your usual access: `mysql -u root -p` (o semplicemente da terminale, non mi ricordo)
+From terminal:
 
 * Step 1: dumpt the db
 
