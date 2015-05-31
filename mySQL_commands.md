@@ -10,6 +10,8 @@ sudo apt-get install mysql-server
 # Accedere a mysql 
 mysql -u root -p
 
+* Nota che la sintassi mysql NON distingue maiuscole/minuscole e che **tutti i comandi devono terminare con `;`**
+
 show databases;
 
 create database mydb;
