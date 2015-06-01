@@ -15,7 +15,8 @@ insert into autore value("George Simenon",NULL)
 
 insert into Libro value("Maigret prende un granchio","","","11a","",NULL);
 
-insert into libro_autore value(1,2); /*questo e' un po' debole perche' devi sapere che 1 e' Maigret prende un granchio e 2 e' Simenon*/
+insert into libro_autore value(1,2); 
+*questo e' un po' debole perche' devi sapere che 1 e' Maigret prende un granchio e 2 e' Simenon*
 
 select Libro.title, Libro.posizione_fissa, autore.nome from Libro,autore,libro_autore where Libro.libro_id=libro_autore.libro_id and libro_autore.autore_id=autore.autore_id;
 
