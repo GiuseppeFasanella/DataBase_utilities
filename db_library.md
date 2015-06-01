@@ -24,10 +24,5 @@ select Libro.title, Libro.posizione_fissa, autore.nome from Libro,autore,libro_a
 
 ![alt tag](https://raw.githubusercontent.com/GiuseppeFasanella/DataBase_utilities/master/img/output_query.png)
 
-+----------------------------+-----------------+----------------+
-| title                      | posizione_fissa | nome           |
-+----------------------------+-----------------+----------------+
-| Maigret prende un granchio | 11a             | George Simenon |
-+----------------------------+-----------------+----------------+
 
 
