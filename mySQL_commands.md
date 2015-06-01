@@ -30,7 +30,7 @@ drop database if exists mydb;
 
 La cosa importante del db e' la progettazione (Ho scritto un .md a parte)
 
-![alt tag](https://raw.githubusercontent.com/GiuseppeFasanella/Git_commands/master/images/basso.png)
+![alt tag](https://raw.githubusercontent.com/GiuseppeFasanella/DataBase_utilities/master/img/db_scheme.png)
 
 # Creare le tabelle e popolarle
 
