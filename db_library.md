@@ -20,6 +20,8 @@ insert into libro_autore value(1,2);
 
 select Libro.title, Libro.posizione_fissa, autore.nome from Libro,autore,libro_autore where Libro.libro_id=libro_autore.libro_id and libro_autore.autore_id=autore.autore_id;
 
+![alt tag](https://raw.githubusercontent.com/GiuseppeFasanella/DataBase_utilities/master/img/output_query.png)
+
 +----------------------------+-----------------+----------------+
 | title                      | posizione_fissa | nome           |
 +----------------------------+-----------------+----------------+
