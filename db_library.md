@@ -3,7 +3,7 @@
 
 ![alt tag](https://raw.githubusercontent.com/GiuseppeFasanella/DataBase_utilities/master/img/libri_db.png)
 
-** Fatto il disegno, puoi creare le tabelle e popolarle
+**Fatto il disegno, puoi creare le tabelle e popolarle**
 
 * create table Libro(title VARCHAR(30) NOT NULL, periodo VARCHAR(20) NULL, argomento VARCHAR(20) NULL, posizione_fissa VARCHAR(20) NOT NULL, posizione_temp VARCHAR(20) NULL, libro_id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY);
 
