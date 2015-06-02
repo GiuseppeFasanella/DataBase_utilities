@@ -18,13 +18,37 @@
 * insert into Libro value("Maigret prende un granchio","","","11a","",NULL);
 
 * insert into libro_autore value(1,2); 
-*questo e' un po' debole perche' devi sapere che 1 e' Maigret prende un granchio e 2 e' Simenon*
+*questo e' un po' debole perche' devi sapere che 1 e' "Maigret prende un granchio" e 2 e' Simenon*
 
-**Query**
+**Curare le debolezze di libro_autore**
+* Voglio sapere l'id di un autore? Lo chiedo!
+
+select nome,autore_id from autore where nome="Gabriele D'Annunzio"
+
+* Voglio sapere l'id di un libro e l'id del suo autore? Li chiedo!
+
+select nome,autore_id from autore where nome="Gabriele D'Annunzio";\\
+select title, libro_id from Libro where title="Il trionfo della morte";
+
+
+**My Usual queries**
 
 select Libro.title, Libro.posizione_fissa, autore.nome from Libro,autore,libro_autore where Libro.libro_id=libro_autore.libro_id and libro_autore.autore_id=autore.autore_id;
 
 ![alt tag](https://raw.githubusercontent.com/GiuseppeFasanella/DataBase_utilities/master/img/output_query.png)
+
+*Search for "book name", "period", "author name" like this*
+select Libro.title, Libro.posizione_fissa, autore.nome
+from Libro,autore,libro_autore 
+where Libro.libro_id=libro_autore.libro_id and libro_autore.autore_id=autore.autore_id
+and Libro.argomento="Decadentismo";
+
+*My typical queries: search for a Title, an author or a period*
+and Libro.title="Maigret prende un granchio";
+
+and Libro.argomento="Decadentismo";
+
+and autore.nome="Simenon";
 
 
 
