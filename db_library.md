@@ -54,7 +54,7 @@ select title, libro_id from Libro where title="Il trionfo della morte";
 
 * select * from autore where nome like "%simenon%";
 
-**Tutto questo casino io l'ho fatto perche' voglio la domanda alla risposta "Dove si trova questo libro?":**Il concetto cardine e' quello di fare un controllo incrociato delle chiavi
+**Tutto questo casino io l'ho fatto perche' voglio la risposta alla domanda "Dove si trova questo libro?":** il concetto cardine e' quello di fare un controllo incrociato delle chiavi
 
 select Libro.title, Libro.posizione_fissa, autore.nome from Libro,autore,libro_autore where Libro.libro_id=libro_autore.libro_id and libro_autore.autore_id=autore.autore_id;
 
@@ -77,8 +77,8 @@ and Libro.title="Maigret prende un granchio";
 
 and Libro.argomento="Decadentismo";
 
-
 *oppure ancora*
+
 and autore.nome="Simenon";
 
 
