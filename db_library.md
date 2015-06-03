@@ -42,7 +42,7 @@ select title, libro_id from Libro where title="Il trionfo della morte";
 
 * select * from autore where nome="george simenon"; *funziona benissmo*
 
-** Ricerca per pattern **
+**Ricerca per pattern**
 
 * `%` richiede il match con un numero arbitrario di caratteri (anche 0) e si usa in combinazione con `like`
 
@@ -54,15 +54,15 @@ select title, libro_id from Libro where title="Il trionfo della morte";
 
 * select * from autore where nome like "%simenon%";
 
-**Il concetto cardine e' quello di fare un controllo incrociato delle chiavi**
+**Tutto questo casino io l'ho fatto perche' voglio la domanda alla risposta "Dove si trova questo libro?":**Il concetto cardine e' quello di fare un controllo incrociato delle chiavi
 
 select Libro.title, Libro.posizione_fissa, autore.nome from Libro,autore,libro_autore where Libro.libro_id=libro_autore.libro_id and libro_autore.autore_id=autore.autore_id;
 
 ![alt tag](https://raw.githubusercontent.com/GiuseppeFasanella/DataBase_utilities/master/img/output_query.png)
 
-**Cerca "titolo", "periodo", "autore" in questo modo:**
+**Cerca per "titolo", "periodo", "autore" e dimmi dove si trovano i miei libri**
 
-*Le mie query tipiche: ricerca per titolo/autore/periodo, percio' l'ultima condizione e' una di quelle proposte*
+*L'ultima condizione e' una di quelle proposte a seconda dei casi (o una loro combinazione)*
 
 select Libro.title, Libro.posizione_fissa, autore.nome
 from Libro,autore,libro_autore 
