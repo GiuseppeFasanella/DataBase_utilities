@@ -75,11 +75,15 @@ and Libro.title="Maigret prende un granchio";
 
 *oppure*
 
+and Libro.title like "maigret prende un granchio%"; *se pensi di poter avere piu' edizioni (ti ricordo che le query su stringhe sono case INsensitive*
+
+*oppure*
+
 and Libro.argomento="Decadentismo";
 
 *oppure ancora*
 
-and autore.nome="Simenon";
+and autore.nome like "%Simenon";
 
 
 
