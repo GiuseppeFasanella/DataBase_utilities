@@ -38,6 +38,22 @@ select title, libro_id from Libro where title="Il trionfo della morte";
 
 **Le mie query solite**
 
+**In mySQL il confronto tra stringhe e' case INSENSITIVE**
+
+* select * from autore where nome="george simenon"; *funziona benissmo*
+
+** Ricerca per pattern **
+
+* `%` richiede il match con un numero arbitrario di caratteri (anche 0) e si usa in combinazione con `like`
+
+* `_` richiede il match con esattemente 1 carattere (anche lui da usare in combinazione con `like`
+
+* select * from autore where nome like "%simenon";
+
+*oppure anche cosi' (se non ricordi se il nome l'hai scritto prima o dopo il nome)*
+
+* select * from autore where nome like "%simenon%";
+
 **Il concetto cardine e' quello di fare un controllo incrociato delle chiavi**
 
 select Libro.title, Libro.posizione_fissa, autore.nome from Libro,autore,libro_autore where Libro.libro_id=libro_autore.libro_id and libro_autore.autore_id=autore.autore_id;
