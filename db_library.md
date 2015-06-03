@@ -7,6 +7,10 @@
 
 * create table Libro(title VARCHAR(30) NOT NULL, periodo VARCHAR(20) NULL, argomento VARCHAR(20) NULL, posizione_fissa VARCHAR(20) NOT NULL, posizione_temp VARCHAR(20) NULL, libro_id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY);
 
+* alter table Libro add constraint unique_title unique(title); **in questo modo ti proteggi dall'inserire due volte lo stesso libro.**
+
+*Vero e' che puoi avere due edizioni dello stesso libro ma, in quel caso, puoi modificare il constraint e dire unique(nome,edizione). Oppure, meno elegante ma altrettanto efficace nel mio caso il doppione avra' come titolo "Maigret prende un granchio (ed. Adelphi)"*
+
 * create table autore(nome VARCHAR(60) NOT NULL, autore_id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY);
 
 * alter table autore add constraint unique_name unique(nome); **in questo modo ti proteggi dall'inserire due volte lo stesso autore**
