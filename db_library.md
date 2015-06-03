@@ -9,7 +9,7 @@
 
 * alter table Libro add constraint unique_title unique(title); **in questo modo ti proteggi dall'inserire due volte lo stesso libro.**
 
-*Vero e' che puoi avere due edizioni dello stesso libro ma, in quel caso, puoi modificare il constraint e dire unique(nome,edizione). Oppure, meno elegante ma altrettanto efficace nel mio caso il doppione avra' come titolo "Maigret prende un granchio (ed. Adelphi)"*
+*Vero e' che puoi avere due edizioni dello stesso libro ma, in quel caso, puoi modificare il constraint e dire unique(title,edizione). Oppure, meno elegante ma altrettanto efficace nel mio caso chiamero' il doppione "Maigret prende un granchio (ed. Adelphi)"*
 
 * create table autore(nome VARCHAR(60) NOT NULL, autore_id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY);
 
@@ -46,17 +46,23 @@ select Libro.title, Libro.posizione_fissa, autore.nome from Libro,autore,libro_a
 
 **Cerca "titolo", "periodo", "autore" in questo modo:**
 
+*Le mie query tipiche: ricerca per titolo/autore/periodo, percio' l'ultima condizione e' una di quelle proposte*
+
 select Libro.title, Libro.posizione_fissa, autore.nome
 from Libro,autore,libro_autore 
 where Libro.libro_id=libro_autore.libro_id and libro_autore.autore_id=autore.autore_id
 and Libro.argomento="Decadentismo";
 
-*Le mie query tipiche: ricerca per titolo/autore/periodo, percio' l'ultima condizione e' una di queste:*
+*oppure*
 
 and Libro.title="Maigret prende un granchio";
 
+*oppure*
+
 and Libro.argomento="Decadentismo";
 
+
+*oppure ancora*
 and autore.nome="Simenon";
 
 
