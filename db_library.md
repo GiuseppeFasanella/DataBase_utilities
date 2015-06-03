@@ -75,7 +75,7 @@ and Libro.title="Maigret prende un granchio";
 
 *oppure*
 
-and Libro.title like "maigret prende un granchio%"; *se pensi di poter avere piu' edizioni (ti ricordo che le query su stringhe sono case INsensitive*
+and Libro.title like "maigret prende un granchio%"; *% alla fine se pensi di poter avere piu' edizioni (ti ricordo che le query su stringhe sono case INsensitive) *
 
 *oppure*
 
