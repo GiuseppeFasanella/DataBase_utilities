@@ -9,11 +9,13 @@
 
 * create table autore(nome VARCHAR(60) NOT NULL, autore_id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY);
 
+* alter table autore add constraint unique_name unique(nome); **in questo modo ti proteggi dall'inserire due volte lo stesso autore**
+
 * create table libro_autore(libro_id int unsigned not null, autore_id int unsigned not null, primary key(libro_id,autore_id));
 
 * insert into Libro value("Maigret prende un granchio","","","11a","",NULL);
 
-* insert into autore value("George Simenon",NULL)
+* insert into autore value("George Simenon",NULL);
 
 * insert into libro_autore(libro_id,autore_id) select libro_id, autore_id from Libro join autore where Libro.title="Maigret prende un granchio" and autore.nome="George Simenon"; 
 
