@@ -11,17 +11,19 @@
 
 * create table libro_autore(libro_id int unsigned not null, autore_id int unsigned not null, primary key(libro_id,autore_id));
 
-* insert into autore value("Thomas Mann",NULL)
+* insert into Libro value("Maigret prende un granchio","","","11a","",NULL);
 
 * insert into autore value("George Simenon",NULL)
 
-* insert into Libro value("Maigret prende un granchio","","","11a","",NULL);
+* insert into libro_autore(libro_id,autore_id) select libro_id, autore_id from Libro join autore where Libro.title="Maigret prende un granchio" and autore.nome="George Simenon"; 
 
-* insert into libro_autore value(1,2); 
-*questo e' un po' debole perche' devi sapere che 1 e' "Maigret prende un granchio" e 2 e' Simenon*
+**Con "insert select" eviti di scrivere una cosa del genere**
 
-**Curare la debolezza di libro_autore**
-* Voglio sapere l'id di un libro e l'id del suo autore? Li chiedo!
+* insert into libro_autore value(X,Y); 
+
+*Che risulta debolissima perche' devi sapere che X e' "Maigret prende un granchio" e Y e' Simenon.*
+
+* Se poi volessi sapere l'id di un libro e l'id del suo autore, li chiedo cosi':
 
 select nome,autore_id from autore where nome="Gabriele D'Annunzio";
 
