@@ -19,7 +19,7 @@
 
 * insert into Libro value("Maigret prende un granchio","","","11a","",NULL);
 
-* insert into autore value("George Simenon",NULL);
+* insert into autore value("George Simenon",NULL); #mySQL e' case INsensitive per le stringhe
 
 * insert into libro_autore(libro_id,autore_id) select libro_id, autore_id from Libro join autore where Libro.title="Maigret prende un granchio" and autore.nome="George Simenon"; 
 
