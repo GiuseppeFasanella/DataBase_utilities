@@ -1,10 +1,9 @@
 <?php
 // Get a connection for the database
-require_once('../../mysqli_connect.php');//mysqlt_connect e' in /var/ fuori da wwww
+require_once('../../mysqli_connect.php');//mysqli_connect e' in /var/ fuori da wwww
 
 // Create a query for the database
 $query = "SELECT first_name, email FROM students";
-
 // Get a response from the database by sending the connection
 // and the query
 $response = @mysqli_query($dbc, $query);
