@@ -1,7 +1,11 @@
-# Disegnare il database
+**Per il disegno** vedi [qui] (https://github.com/GiuseppeFasanella/DataBase_utilities/blob/master/Library/db_library.md)
 
-# Il DB e' stato interfacciato con uno script in bash
+Per lavorarci sopra in comodita', ho interfacciato il db sia in **bash**, sia in **php**
 
+**Interfaccia in php** (comodissima)
+Da Browser `localhost/`
+
+**Interfaccia in bash**
 * Inserire un nuovo libro nel db
 
 *Titolo Posizione_nella_libreria Autore*
