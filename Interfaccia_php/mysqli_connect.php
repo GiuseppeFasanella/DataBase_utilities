@@ -17,7 +17,7 @@ DELETE : Delete existing rows (Remove privilege if not required)
 
 // Defined as constants so that they can't be changed
 DEFINE ('DB_USER', 'root');
-DEFINE ('DB_PASSWORD', 'Hannibal123');
+DEFINE ('DB_PASSWORD', 'passwd');
 DEFINE ('DB_HOST', 'localhost');
 DEFINE ('DB_NAME', 'test3');
 
@@ -27,7 +27,7 @@ DEFINE ('DB_NAME', 'test3');
 echo '<h2>You requested to access your database '.DB_NAME.'</h2>';
 
 $dbc = @mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
-//$dbc = mysqli_connect('localhost','root','Hannibal123','test3');
+//$dbc = mysqli_connect('localhost','root','passwd','test3');
 
 if(mysqli_connect_error($dbc)){
 exit('Error'. mysqli_connect_error($connection));
