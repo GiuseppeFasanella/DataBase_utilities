@@ -47,7 +47,7 @@ if(isset($_POST['submit'])){
     
     if(empty($data_missing)){
         
-        require_once('../mysqli_connect_mine.php');
+        require_once('../../mysqli_connect.php');//perche' mysqli_connect.php  e' posizionato fuori da www, nella cartella /var/
         
         $query = "INSERT INTO students (first_name, email, sex, student_id) VALUES (?,?,?, NULL)";
         
