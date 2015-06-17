@@ -27,11 +27,11 @@ Bastano **4 passaggi**:
 
 * 1) Attraverso l'estensione mysqli_connect del php ci si puo' agganciare ai db
 
-In /var/www/My_db/mysqli_connect.php metti lo script di aggancio. In futuro, va messo **fuori** da www per sicurezza. Percio' da browser `localhost/My_db/mysqlt_connect.php` e ti agganci al tuo db
+In /var/mysqli_connect.php metti lo script di aggancio. Va messo **fuori** da www per sicurezza. 
 
 * 2) Fai una query da browser
 
-`localhost/My_db/getstudentinfo.php` (Si connette al db e stampa a schermo il risultato della query)
+`localhost/My_db/getstudentinfo.php` (Si connette al db chiamando ../../mysqli_connect.php e stampa a schermo il risultato della query)
 
 Nota: se uno script ti da' problemi, e' utile fare il test di "cosa vede il server"
 
