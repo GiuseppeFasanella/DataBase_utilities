@@ -1,6 +1,6 @@
 <?php
 // Get a connection for the database
-require_once('../mysqli_connect_mine.php');
+require_once('../../mysqli_connect.php');//mysqlt_connect e' in /var/ fuori da wwww
 
 // Create a query for the database
 $query = "SELECT first_name, email FROM students";
