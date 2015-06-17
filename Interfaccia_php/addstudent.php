@@ -3,7 +3,7 @@
 <title>Add Student To DB</title>
 </head>
 <body>
-<form action="http://localhost/Test_db/Mine/studentadded_mine.php" method="post">
+<form action="http://localhost/My_db/studentadded.php" method="post">
 
 <b>Add a New Student</b>
 
