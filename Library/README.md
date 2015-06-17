@@ -3,6 +3,9 @@
 Per lavorarci sopra in comodita', ho interfacciato il db sia in **bash**, sia in **php**
 
 **Interfaccia in php** (comodissima)
+
+Per una spiegazione dettagliata, vedi [qui] (https://github.com/GiuseppeFasanella/DataBase_utilities/tree/master/Interfaccia_php)
+
 Da Browser `localhost/`
 
 **Interfaccia in bash**
