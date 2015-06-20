@@ -1,5 +1,9 @@
 # Interfaccia php
 
+In questa cartella ci sono gli script finali per implementare l'interfaccia.
+Per una spiegazione piu' generale del come e del perche' vedi [qui] (https://github.com/GiuseppeFasanella/DataBase_utilities/tree/master/Interfaccia_php). 
+
+**In sostanza**
 * Nella cartella /var/www crea una cartella My_db (ti ricordo che se hai fatto le cose bene da browser puoi navigare la cartella /var/www scrivendo come indirizzo `localhost`)
 * fuori da /www piazza lo script di aggancio al db `mysqli_connect.php`
 * in www/My_db/ piazza gli script di lavoro
