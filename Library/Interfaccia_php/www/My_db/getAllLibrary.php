@@ -1,3 +1,8 @@
+<html>
+  <head>
+    <title>All my books</title>
+  </head>
+  <body>
 <?php
 // Get a connection for the database
 require_once('../../mysqli_connect.php');
@@ -45,3 +50,5 @@ mysqli_close($dbc);
 
 
 ?>
+</body>
+</html>
