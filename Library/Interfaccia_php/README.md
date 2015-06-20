@@ -1,6 +1,6 @@
 # Interfaccia php
 
-* Nella cartella /var/www crea una cartella My_db
+* Nella cartella /var/www crea una cartella My_db (ti ricordo che se hai fatto le cose bene da browser puoi navigare la cartella /var/www scrivendo come indirizzo `localhost`)
 * fuori da /www piazza lo script di aggancio al db `mysqli_connect.php`
 * in www/My_db/ piazza gli script di lavoro
 
