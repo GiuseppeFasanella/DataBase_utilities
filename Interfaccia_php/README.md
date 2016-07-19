@@ -1,6 +1,9 @@
 * Vedi anche [HTML] (https://github.com/GiuseppeFasanella/html_snippets_codes)
 * Vedi anche [PHP] (https://github.com/GiuseppeFasanella/PHP/tree/master)
 
+```
+sudo apt-get install mysql-server
+```
 # Esistono 2 soluzioni, a seconda dei gusti:
 
 **La soluzione piu' comune e' usare PHPMYADMIN** che e' un tool in cui l'interfaccia e' gia' implementata.
