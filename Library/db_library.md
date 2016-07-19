@@ -26,6 +26,7 @@ USE Library;
 
 * create table libro_autore(libro_id int unsigned not null, autore_id int unsigned not null, primary key(libro_id,autore_id));
 
+######Inizia a popolare il libro###############################################
 * insert into Libro value("Maigret prende un granchio","","","11a","",NULL);
 
 * insert into autore value("George Simenon",NULL); #mySQL e' case INsensitive per le stringhe
