@@ -5,6 +5,15 @@
 
 **Fatto il disegno, puoi creare le tabelle e popolarle**
 
+```
+## Creare il database
+sudo apt-get install mysql-server
+mysql -u root -p
+CREATE DATABASE Library;
+USE Library;
+```
+
+
 * create table Libro(title VARCHAR(30) NOT NULL, periodo VARCHAR(20) NULL, argomento VARCHAR(20) NULL, posizione_fissa VARCHAR(20) NOT NULL, posizione_temp VARCHAR(20) NULL, libro_id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY);
 
 * alter table Libro add constraint unique_title unique(title); **in questo modo ti proteggi dall'inserire due volte lo stesso libro.**
