@@ -1,10 +1,13 @@
 * Vedi anche [HTML] (https://github.com/GiuseppeFasanella/html_snippets_codes)
 * Vedi anche [PHP] (https://github.com/GiuseppeFasanella/PHP/tree/master)
 
+
+# Esistono 2 soluzioni, a seconda dei gusti:
+
 ```
+#L'hai gia' fatto?
 sudo apt-get install mysql-server
 ```
-# Esistono 2 soluzioni, a seconda dei gusti:
 
 **La soluzione piu' comune e' usare PHPMYADMIN** che e' un tool in cui l'interfaccia e' gia' implementata.
 
@@ -22,7 +25,7 @@ sudo ln -s /usr/share/phpmyadmin /var/www/phpmyadmin
 e si apre una pagine web all'interno della quale hai accesso grafico ai tuoi db
 
 * Nota: se dovesse darti qualche errore. riavvia il server apache2 e vedrai che funziona: 
-* sudo /etc/init/d/apache2 start (oppure stop, oppure restart)
+* sudo /etc/init.d/apache2 start (oppure stop, oppure restart)
 
 **La soluzione piu' artigianale, che quasi preferisco e' interfacciare mysql con php a mano**
 
