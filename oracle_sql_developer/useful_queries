@@ -1,0 +1,15 @@
+
+Check di cosa hai scritto sul db
+
+select * from dh_den_stage.F_PRODUCTION_FARM_H_EXPERIMENT 
+where farm_id=744 and model_type='BDT' order by valuedate, forecastdate;
+
+select forecastdate,valuedate, value_50 from dh_den_stage.F_PRODUCTION_FARM_H_EXPERIMENT 
+where farm_id=247 and model_type='BDT_EC' order by valuedate, forecastdate;
+
+check della somma delle predizioni su tutte le farm
+select forecastdate,valuedate, sum(value_50)
+from dh_den_stage.F_PRODUCTION_FARM_H_EXPERIMENT
+where model_type='BDT' 
+group by valuedate, forecastdate
+order by valuedate, forecastdate;
